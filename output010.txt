@@ -1,0 +1,112 @@
+Simulation begins...
+# testing 10 patients
+Patient 3 Queued in waitList!
+Patient 4 Queued in waitList!
+Patient 5 Queued in waitList!
+Patient 6 Queued in waitList!
+Patient 7 Queued in waitList!
+Patient 6 Queued in waitList!
+Patient 3 Queued in waitList!
+Patient 5 Queued in waitList!
+Patient 2 Queued in waitList!
+Patient 7 Queued in waitList!
+Patient 6 Queued in waitList!
+Patient 6 Queued in waitList!
+Patient 10 Queued in waitList!
+Patient 9 Queued in waitList!
+Patient 3 Queued in waitList!
+Patient 10 Queued in waitList!
+Patient 8 Queued in waitList!
+-----Event Queue!-----
+Time     8 : Patient     1 arrives in ED. Assessment nurse is free. Starting the assessment.
+Time     8 : Patient     1 begins assessment of length 5.
+Time     9 : Patient     2 arrives in ED. Assessment nurse is free. Starting the assessment.
+Time     9 : Patient     2 begins assessment of length 16.
+Time     9 : Patient     3 arrives in ED. Assessment nurse is busy. Added to the wait list.
+Time     12 : Patient     4 arrives in ED. Assessment nurse is busy. Added to the wait list.
+Time     13 : Patient     3 begins assessment of length 29.
+Time     13 : Patient     1 completes assessment, assigned priority of 5, scheduled for blood work.
+Time     13 : Patient     1 begins blood Work.
+Time     15 : Patient     5 arrives in ED. Assessment nurse is busy. Added to the wait list.
+Time     20 : Patient     6 arrives in ED. Assessment nurse is busy. Added to the wait list.
+Time     25 : Patient     2 completes assessment, assigned priority of 4, scheduled for blood work.
+Time     25 : Patient     2 begins blood Work.
+Time     25 : Patient     4 begins assessment of length 8.
+Time     28 : Patient     1 completes blood work. Scheduled for treatment.
+Time     28 : Patient     1 starts treatment of length 123
+Time     33 : Patient     4 completes assessment, assigned priority of 4, scheduled for blood work.
+Time     33 : Patient     4 begins blood Work.
+Time     33 : Patient     5 begins assessment of length 13.
+Time     40 : Patient     2 completes blood work. Scheduled for xray.
+Time     40 : Patient     2 begins Xray.
+Time     42 : Patient     6 begins assessment of length 6.
+Time     42 : Patient     3 completes assessment, assigned priority of 4, scheduled for blood work.
+Time     42 : Patient     3 begins blood Work.
+Time     46 : Patient     7 begins assessment of length 20.
+Time     46 : Patient     5 completes assessment, assigned priority of 5, scheduled for blood work.
+Time     46 : Patient     5 begins blood Work.
+Time     46 : Patient     5 begins blood Work.
+Time     48 : Patient     6 completes assessment, assigned priority of 3, added to the wait list of xray.
+Time     48 : Patient     4 completes blood work. Scheduled for treatment.
+Time     48 : Patient     4 starts treatment of length 134
+Time     57 : Patient     3 completes blood work. Added to the wait list of xray.
+Time     61 : Patient     5 completes blood work. Scheduled for treatment.
+Time     61 : Patient     5 completes blood work. Added to the wait list of treatment.
+Time     61 : Patient     5 starts treatment of length 65
+Time     65 : Patient     6 begins Xray.
+Time     65 : Patient     6 begins Xray.
+Time     65 : Patient     2 completes Xray. Added to the wait list of blood work.
+Time     66 : Patient     7 completes assessment, assigned priority of 3, added to the wait list of treatment.
+Time     70 : Patient     7 arrives in ED. Assessment nurse is busy. Added to the wait list.
+Time     84 : Patient     8 arrives in ED. Assessment nurse is free. Starting the assessment.
+Time     84 : Patient     8 begins assessment of length 14.
+Time     90 : Patient     6 completes Xray. Added to the wait list of treatment.
+Time     90 : Patient     6 completes Xray. Added to the wait list of treatment.
+Time     90 : Patient     3 begins Xray.
+Time     93 : Patient     9 arrives in ED. Assessment nurse is free. Starting the assessment.
+Time     93 : Patient     9 begins assessment of length 6.
+Time     95 : Patient     10 arrives in ED. Assessment nurse is busy. Added to the wait list.
+Time     98 : Patient     8 completes assessment, assigned priority of 4, scheduled for blood work.
+Time     98 : Patient     8 begins blood Work.
+Time     98 : Patient     10 begins assessment of length 28.
+Time     99 : Patient     9 completes assessment, assigned priority of 5, scheduled for blood work.
+Time     99 : Patient     9 begins blood Work.
+Time     113 : Patient     8 completes blood work. Scheduled for xray.
+Time     113 : Patient     8 begins Xray.
+Time     114 : Patient     9 completes blood work. Added to the wait list of treatment.
+Time     115 : Patient     3 completes Xray. Added to the wait list of blood work.
+Time     126 : Patient     6 starts treatment of length 33
+Time     126 : Patient     6 starts treatment of length 33
+Time     126 : Patient     5 discharged at time 126
+Time     126 : Patient     10 completes assessment, assigned priority of 5, added to the wait list of treatment.
+Time     138 : Patient     8 completes Xray. Added to the wait list of blood work.
+Time     151 : Patient     6 starts treatment of length 33
+Time     151 : Patient     1 discharged at time 151
+Time     159 : Patient     6 discharged at time 159
+Time     159 : Patient     6 discharged at time 159
+Time     159 : Patient     7 starts treatment of length 134
+Time     159 : Patient     2 starts treatment of length 36
+Time     182 : Patient     3 starts treatment of length 132
+Time     182 : Patient     4 discharged at time 182
+Time     184 : Patient     6 discharged at time 184
+Time     184 : Patient     8 starts treatment of length 86
+Time     195 : Patient     2 discharged at time 195
+Time     195 : Patient     5 starts treatment of length 65
+Time     260 : Patient     5 discharged at time 260
+Time     260 : Patient     9 starts treatment of length 107
+Time     270 : Patient     8 discharged at time 270
+Time     270 : Patient     10 starts treatment of length 25
+Time     293 : Patient     7 discharged at time 293
+Time     295 : Patient     10 discharged at time 295
+Time     314 : Patient     3 discharged at time 314
+Time     367 : Patient     9 discharged at time 367
+-----End of Queue!-----
+
+...Simulation complete.
+
+Assessment   / Total Patients : 10 / Total service time : 145 / Average service time 14.5 / Total wait time : 36 / Average wait time 3.6
+BloodWork    / Total Patients : 7 / Total service time : 105 / Average service time 15 / Total wait time : 0 / Average wait time 0
+Xray         / Total Patients : 4 / Total service time : 100 / Average service time 25 / Total wait time : 126 / Average wait time 31.5
+Treatment    / Total Patients : 12 / Total service time : 1006 / Average service time 83.8333 / Total wait time : 1287 / Average wait time 107.25
+
+End of processing.

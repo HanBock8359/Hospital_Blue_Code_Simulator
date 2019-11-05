@@ -1,0 +1,4 @@
+# testing 4 patients
+8 5 5 B- 123
+9 16 4 BX 36
+9 29 4 BX 132

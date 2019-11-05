@@ -1,0 +1,105 @@
+# Project: Project1
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+RES      = Project1_private.res
+OBJ      = A2Const.o A2main.o Arrival.o Assessment.o BloodWork.o CompleteAssessment.o CompleteBloodWork.o CompleteXray.o Discharge.o EQueue.o Event.o Hospital.o List.o ListItem.o Node.o Patient.o PQueue.o Queue.o StartAssessment.o StartBloodWork.o StartTreatment.o StartXray.o Station.o Treatment.o Xray.o $(RES)
+LINKOBJ  = A2Const.o A2main.o Arrival.o Assessment.o BloodWork.o CompleteAssessment.o CompleteBloodWork.o CompleteXray.o Discharge.o EQueue.o Event.o Hospital.o List.o ListItem.o Node.o Patient.o PQueue.o Queue.o StartAssessment.o StartBloodWork.o StartTreatment.o StartXray.o Station.o Treatment.o Xray.o $(RES)
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Project1.exe
+CXXFLAGS = $(CXXINCS) -g3
+CFLAGS   = $(INCS) -g3
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+A2Const.o: A2Const.cpp
+	$(CPP) -c A2Const.cpp -o A2Const.o $(CXXFLAGS)
+
+A2main.o: A2main.cpp
+	$(CPP) -c A2main.cpp -o A2main.o $(CXXFLAGS)
+
+Arrival.o: Arrival.cpp
+	$(CPP) -c Arrival.cpp -o Arrival.o $(CXXFLAGS)
+
+Assessment.o: Assessment.cpp
+	$(CPP) -c Assessment.cpp -o Assessment.o $(CXXFLAGS)
+
+BloodWork.o: BloodWork.cpp
+	$(CPP) -c BloodWork.cpp -o BloodWork.o $(CXXFLAGS)
+
+CompleteAssessment.o: CompleteAssessment.cpp
+	$(CPP) -c CompleteAssessment.cpp -o CompleteAssessment.o $(CXXFLAGS)
+
+CompleteBloodWork.o: CompleteBloodWork.cpp
+	$(CPP) -c CompleteBloodWork.cpp -o CompleteBloodWork.o $(CXXFLAGS)
+
+CompleteXray.o: CompleteXray.cpp
+	$(CPP) -c CompleteXray.cpp -o CompleteXray.o $(CXXFLAGS)
+
+Discharge.o: Discharge.cpp
+	$(CPP) -c Discharge.cpp -o Discharge.o $(CXXFLAGS)
+
+EQueue.o: EQueue.cpp
+	$(CPP) -c EQueue.cpp -o EQueue.o $(CXXFLAGS)
+
+Event.o: Event.cpp
+	$(CPP) -c Event.cpp -o Event.o $(CXXFLAGS)
+
+Hospital.o: Hospital.cpp
+	$(CPP) -c Hospital.cpp -o Hospital.o $(CXXFLAGS)
+
+List.o: List.cpp
+	$(CPP) -c List.cpp -o List.o $(CXXFLAGS)
+
+ListItem.o: ListItem.cpp
+	$(CPP) -c ListItem.cpp -o ListItem.o $(CXXFLAGS)
+
+Node.o: Node.cpp
+	$(CPP) -c Node.cpp -o Node.o $(CXXFLAGS)
+
+Patient.o: Patient.cpp
+	$(CPP) -c Patient.cpp -o Patient.o $(CXXFLAGS)
+
+PQueue.o: PQueue.cpp
+	$(CPP) -c PQueue.cpp -o PQueue.o $(CXXFLAGS)
+
+Queue.o: Queue.cpp
+	$(CPP) -c Queue.cpp -o Queue.o $(CXXFLAGS)
+
+StartAssessment.o: StartAssessment.cpp
+	$(CPP) -c StartAssessment.cpp -o StartAssessment.o $(CXXFLAGS)
+
+StartBloodWork.o: StartBloodWork.cpp
+	$(CPP) -c StartBloodWork.cpp -o StartBloodWork.o $(CXXFLAGS)
+
+StartTreatment.o: StartTreatment.cpp
+	$(CPP) -c StartTreatment.cpp -o StartTreatment.o $(CXXFLAGS)
+
+StartXray.o: StartXray.cpp
+	$(CPP) -c StartXray.cpp -o StartXray.o $(CXXFLAGS)
+
+Station.o: Station.cpp
+	$(CPP) -c Station.cpp -o Station.o $(CXXFLAGS)
+
+Treatment.o: Treatment.cpp
+	$(CPP) -c Treatment.cpp -o Treatment.o $(CXXFLAGS)
+
+Xray.o: Xray.cpp
+	$(CPP) -c Xray.cpp -o Xray.o $(CXXFLAGS)
+
+Project1_private.res: Project1_private.rc 
+	$(WINDRES) -i Project1_private.rc --input-format=rc -o Project1_private.res -O coff 
+

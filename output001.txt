@@ -1,0 +1,22 @@
+Simulation begins...
+# testing 1 patients
+-----Event Queue!-----
+Time     1 : Patient     1 arrives in ED. Assessment nurse is free. Starting the assessment.
+Time     1 : Patient     1 begins assessment of length 22.
+Time     23 : Patient     1 completes assessment, assigned priority of 5, scheduled for blood work.
+Time     23 : Patient     1 begins blood Work.
+Time     38 : Patient     1 completes blood work. Scheduled for xray.
+Time     38 : Patient     1 begins Xray.
+Time     63 : Patient     1 completes Xray. Scheduled for blood work.
+Time     63 : Patient     1 starts treatment of length 39
+Time     102 : Patient     1 discharged at time 102
+-----End of Queue!-----
+
+...Simulation complete.
+
+Assessment   / Total Patients : 1 / Total service time : 22 / Average service time 22 / Total wait time : 0 / Average wait time 0
+BloodWork    / Total Patients : 1 / Total service time : 15 / Average service time 15 / Total wait time : 0 / Average wait time 0
+Xray         / Total Patients : 1 / Total service time : 25 / Average service time 25 / Total wait time : 0 / Average wait time 0
+Treatment    / Total Patients : 1 / Total service time : 39 / Average service time 39 / Total wait time : 0 / Average wait time 0
+
+End of processing.
